@@ -1,0 +1,32 @@
+<div id="sampleDemo" style="" class="demo-padding demo-container">
+        <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
+          
+          <div id="searchDate">
+            
+            <oj-label for="from">Od</oj-label>
+            
+            <oj-input-date id="from" value={{value}} date-picker=[[datePicker]] max="[[toValue]]">
+            </oj-input-date>
+            <br/>
+             
+            <oj-label for="to">Do</oj-label>
+            <oj-input-date id="to" value={{toValue}} date-picker=[[datePicker]] min="[[value]]">
+            </oj-input-date>
+            <!--
+            <br/><br/>
+          
+            <span class="oj-label">From component value is: </span>
+            <span data-bind="text: value"></span>
+            
+            <br/><br/>
+          
+            <span class="oj-label">To component value is: </span>
+            <span data-bind="text: toValue"></span>
+            
+            
+            -->
+          </div>
+  
+          
+        </div>
+      </div>

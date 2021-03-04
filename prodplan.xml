@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment-plan xmlns="http://xmlns.oracle.com/weblogic/deployment-plan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/deployment-plan http://xmlns.oracle.com/weblogic/deployment-plan/1.0/deployment-plan.xsd" global-variables="false">
+   <application-name>BillingCare.war</application-name>
+   <variable-definition>
+      <variable>
+         <name>Custom-ImplementationVersion</name>
+         <value xsi:nil="false">1.1</value>
+      </variable>
+      <variable>
+         <name>Custom-SpecificationVersion</name>
+         <value xsi:nil="false">1.1</value>
+      </variable>
+      <variable>
+         <name>Custom-LibraryName</name>
+         <value xsi:nil="false">BillingCareCustomizations</value>
+      </variable>
+      <variable>
+         <name>Custom-ExactMatch</name>
+         <value xsi:nil="false">true</value>
+      </variable>
+      <variable>
+         <name>Custom-ContextPath</name>
+         <value />
+      </variable>
+   </variable-definition>
+   <module-override>
+      <module-name>BillingCare.war</module-name>
+      <module-type>war</module-type>
+      <module-descriptor external="true">
+         <root-element>weblogic-web-app</root-element>
+         <uri>WEB-INF/weblogic.xml</uri>
+         <variable-assignment>
+            <name>Custom-LibraryName</name>
+            <xpath>/weblogic-web-app/library-ref/library-name</xpath>
+         </variable-assignment>
+      </module-descriptor>
+   </module-override>
+</deployment-plan>

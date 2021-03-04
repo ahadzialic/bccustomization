@@ -1,0 +1,40 @@
+          <div id="sms-secondary-navigation" >
+              
+            <div id="tabbarcontainer-secondary" style="max-width:250px;">
+              <oj-tab-bar 
+                display="all" 
+                edge="end" 
+                selection="{{selectedItem}}">
+                <ul>
+                  <li id="check-reference"
+                      data-bind="click: $root.navigateTo">
+                    <a href="#">
+                      <span class="oj-tabbar-item-icon
+                            demo-home-icon-24 demo-icon-font-24">
+                      </span>
+                      CHECK_REFERENCE
+                    </a>
+                  </li>
+                  <li id="orders"
+                      data-bind="click: $root.navigateTo">
+                    <a href="#"
+                       data-bind="click: $root.navigateTo">
+                      <span class="oj-tabbar-item-icon
+                            demo-education-icon-24 demo-icon-font-24">
+                      </span>
+                      ORDERS
+                    </a>
+                  </li>
+                  <li id="order-confirmation"
+                      data-bind="click: $root.navigateTo">
+                    <a href="">
+                      <span class="oj-tabbar-item-icon
+                            demo-catalog-icon-24 demo-icon-font-24">
+                      </span>
+                      ORDER_CONFIRMATION
+                    </a>
+                  </li>                                   
+                </ul>
+              </oj-tab-bar>
+            </div>
+          </div>

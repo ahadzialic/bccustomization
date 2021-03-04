@@ -1,0 +1,8 @@
+Manifest-Version: 1.1
+Built-By: BST
+Specification-Title: BillingCareCustomizations
+Specification-Version: 1.1
+Implementation-Title: Custom WAR file for Billing Care
+Implementation-Version: 1.1
+Implementation-Vendor: BST
+Extension-Name: BillingCareCustomizations

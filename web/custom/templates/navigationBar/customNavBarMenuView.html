@@ -1,0 +1,89 @@
+          <div id="tabbardemo" >
+            <div id="tabbarcontainer">
+              <oj-tab-bar 
+                display="all" 
+                edge="top" 
+                selection="{{selectedItem}}">
+                <ul>
+                  <li id="SMSPaymentTables"
+                      data-bind="click: $root.navigateTo">
+                    <a href="#">
+                      <span class="oj-tabbar-item-icon
+                            demo-home-icon-24 demo-icon-font-24">
+                      </span>
+                      Pregled SMS payment
+                    </a>
+                  </li>
+                  <li id="mCommerceFiles"
+                                            data-bind="click: $root.navigateTo">
+                    <a href="#">
+                      <span class="oj-tabbar-item-icon
+                            demo-education-icon-24 demo-icon-font-24">
+                      </span>
+                      Kreiranje file-ova
+                    </a>
+                  </li>
+                  <!--
+                  <li id="cookbook" class="oj-disabled"
+                      data-bind="click: $root.navigateTo">
+                    <a href="#">
+                      <span class="oj-tabbar-item-icon
+                            demo-catalog-icon-24 demo-icon-font-24">
+                      </span>
+                      Cookbook
+                    </a>
+                  </li>
+                  -->
+                  <li id="codeBook" 
+                      data-bind="click: $root.navigateTo">
+                    <a href="#" >
+                      <span class="oj-tabbar-item-icon
+                            demo-palette-icon-24 demo-icon-font-24">
+                      </span>
+                      Šifrarnik REMAIL_LOCATION
+                    </a>
+                  </li>
+                  <!--
+                  <li id="library"
+                      data-bind="click: $root.navigateTo">
+                    <a href="#">
+                      <span class="oj-tabbar-item-icon
+                            demo-library-icon-24 demo-icon-font-24">
+                      </span>
+                      Library
+                    </a>
+                  </li>
+                  <li id="support"
+                      data-bind="click: $root.navigateTo">
+                    <a href="#">
+                      <span class="oj-tabbar-item-icon demo-chat-icon-24 demo-icon-font-24">
+                      </span>
+                      Support
+                    </a>
+                  </li>
+                  <li id="contactus"
+                      data-bind="click: $root.navigateTo">
+                    <a href="#">
+                      <span class="oj-tabbar-item-icon  oj-icon
+                            demo-navtabs-contacts-icon">
+                      </span>
+                      Contact us
+                    </a>
+                  </li>
+                  -->
+                </ul>
+              </oj-tab-bar>
+            </div>
+            <br>
+            <div>
+              <p class="bold">Last selected list item:
+                <span id="results">
+                  <oj-bind-text value="[[selectedItem]]"></oj-bind-text>
+                </span>
+              </p>
+            </div>
+            
+            <div id="custom-page-main-content">
+                
+            </div>
+          </div>

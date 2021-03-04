@@ -1,0 +1,133 @@
+/*Standard - za sva dugmad koja imaju znacaj potvrde dodati klasu confirm-button
+izgled modifikovan u nastavku*/
+.confirm-button > button {
+    background-color: #027bc7 !important;
+    color: white !important;
+}
+
+.confirm-button > button:hover {
+    background-color: #016caf !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer !important;
+}
+/*CustomFullPage - da bude scrollable*/
+#paymentSuspenseSearchContent {
+    overflow-y: scroll;
+}
+/*StyleLab - poruke da budu na desnoj strani ekrana i da zauzimaju 50% ekrana*/
+div#sortingMessages {
+    width: 50vw;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+/*EBill Marketing - fiksirati velicinu textarea*/
+textarea#text-area\|input {
+    height: 300px;
+}
+/*EBill Marketing - fiksirati velicinu textarea*/
+oj-text-area#text-area {
+    max-width: 80vw;
+    width: 70vw !important;
+}
+
+/*Placeholder da bude na pocetku*/
+textarea::-webkit-input-placeholder {
+    text-align: start;
+    padding-top: 2px;
+    color: rgba(0, 0, 0, 0.55);
+    opacity: 1;
+    font-style: italic;
+    font-size: 16px;
+}
+/*Za Marketing page (mozda obrisati ili ukljuciti samo za merketing page)*/
+.container
+  {
+    position: relative;
+    width: 100%;
+    height: 320px;
+  }
+
+.demo-panel
+{
+  height: calc(100% - 40px);
+}
+
+.demo-page
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: white;
+}
+
+/*Defaultni razmak izmedju sekcija*/
+.section {
+    width: 100%;
+    margin-bottom: 50px;
+}
+/*Defaultni razmak izmedju h tagova*/
+.h-margin {
+    margin-bottom: 20px;
+}
+
+
+/*Druga navigaciona traka da bude naglaseno koja je odabrana stavka*/
+div#e-bill-secondary-navigation .oj-selected {
+    box-shadow: 0px 0px 1px 0px #027bc7;
+}
+
+/**/
+#selectedInfo textarea {
+    height: 200px;
+}
+
+/*Obicni text-area da izgleda kao oj-text-area*/
+textarea#text-area {
+    width: 70vw;
+    height: 300px;
+    resize: none;
+    text-align: left;
+    color: rgba(0,0,0,.8);
+    background-color: #fcfcfd;
+    border-style: solid;
+    border-color: #e5e6e6;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-weight: 400;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 18px;
+    font-size: 16px;
+}
+/*Obicni text-area da izgleda kao oj-text-area*/
+textarea#text-area:disabled {
+	background-color: rgb(237, 237, 238) !important;
+	color: rgba(0,0,0,.38) !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/*EBill Marketing - pozicionirati dugme za dodavanje promocije pored textarea
+#marketing*/
+.edit-section, .confirm-section{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 20px;
+    margin-bottom: 2px;
+}

@@ -1,0 +1,21 @@
+<div id="sampleDemo" style="" class="demo-padding demo-container">
+        <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
+          
+          <div id="form1">
+            <oj-label for="combobox">Odaberite banku</oj-label>
+            <oj-combobox-one id="combobox" value="{{val}}"
+              style="max-width:20em">
+              <oj-option value="BBI">Internet Explorer</oj-option>
+              <oj-option value="Sparkasse">Firefox</oj-option>
+              <oj-option value="Raiffeisen">Chrome</oj-option>
+            </oj-combobox-one>
+            <div>
+              <br/>
+              <oj-label for="curr-value" class="oj-label">Curr value is: </oj-label>
+              <span id="curr-value"><oj-bind-text value="[[val]]"></oj-bind-text></span>
+            </div>
+          </div>
+  
+          
+        </div>
+      </div>
